@@ -33,6 +33,8 @@ fi
 osbit=$(uname -m)
 if [ "$osbit" = "x86_64" ]; then
         echo "64 bit operating system is used"
+elif [ "$osbit" = "arm64" ]; then
+        echo "64 bit operating system is used (Apple)"
 else
         echo "Sorry! This script was written for 64 bit operating systems."
 exit
